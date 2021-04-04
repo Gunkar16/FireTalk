@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FireTalk Message page</title>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="room.css">
+</head>
+<body>
+	<nav class="navbar-inverse my_nav_bar">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <label class="top">FireTalk</label>
+			
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <div id="top-button">
+                <button id="FT" style="Float:right" data-toggle="collapse" data-target="#GT"></button>
+                <div class="collapse" id="GT">
+			<button onclick="logOut()" id="logout" class="glyphicon glyphicon-log-out btn btn-danger "></button>
+        </div>
+    </div>
+            <ul class="nav navbar-nav">
+                <li><a href="#input_div_room_page">Home</a></li>
+                <li><a href="FireTalk_TrendingRoom.html">Trending Rooms</a></li>
+				<li><a href="#">Chat</a></li>
+            </ul>
+        </div>
+    </nav>
+<div class="container">
+    	<center>
+		<div id="output" style="text-align: left;margin-top: 70px;"></div>
+	</center>
+</div>
+
+<center>
+	<div class="input_div_message_page">
+		<label>Send:</label>
+		<input type="text" id="msg" class="form-control" placeholder="Enter Message">
+		<button onclick="send()" class="btn btn-info">Send</button>
+	</div>
+</center>
+
+<script src="FireTalk_page.js"></script>
+
+</body>
+</html>

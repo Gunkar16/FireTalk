@@ -1,0 +1,89 @@
+body{
+    background-color: #d9f4ff; 
+}
+#logo{
+
+    width: 133px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: white;
+    margin-top:100px;
+    padding: 20px;
+}
+.header{
+    color: white;
+    font-family: 'Yeon Sung';
+    font-size: 45px;
+
+}
+.header2{
+    color: orange;
+}
+.web{
+    margin-top: 230px;
+    color: white;
+}
+.header3{
+    color:white;
+}
+.flex-container {
+    display: flex;
+    text-align: center;
+    height: 682px;
+    margin: 20px;   
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.flex-child {
+    flex: 1;
+}  
+.div1{
+    background-image: linear-gradient(to right, #45a4ec, #4da7e2, #1882c1, #0a73aa, #006494);
+    border-top-left-radius: 3%;
+    border-bottom-left-radius: 3%;
+}
+.div2{
+ background-color: white;
+    border-top-right-radius: 3%;
+    border-bottom-right-radius: 3%;
+}
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+.Submit{
+    background-color: #0a73aa;
+    color: white;
+    font-size: 20px;
+}
+button:focus{
+    outline:0 !important;
+}
+.input{
+    width: 500px;
+}
+.div3{
+    margin-top: 250px;
+}
+.div4{
+    text-align: left;
+}
+.sign{
+    margin-left: 60px;
+    color:orange;
+    font-family: 'Titillium Web', sans-serif;
+    font-style: bold;
+    margin-bottom: 50px;
+    
+}
+.div5{
+    text-align: right;
+    margin-right:60px ;
+    margin-top: 30px;
+
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+
